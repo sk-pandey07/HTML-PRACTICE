@@ -1,0 +1,87 @@
+/* Google Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6366F1, #14B8A6);
+}
+
+form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 380px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 2px #14B8A6;
+}
+
+.gender {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #14B8A6;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+input[type="reset"] {
+    background: #6366F1;
+}
+
+input[type="submit"]:hover {
+    background: #0d9488;
+}
+
+input[type="reset"]:hover {
+    background: #4f46e5;
+}
+
+#strength {
+    font-size: 12px;
+    margin-top: 4px;
+}
