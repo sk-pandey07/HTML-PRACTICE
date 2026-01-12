@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Student Registration Form</title>
 </head>
 <body>
-    <h3>STUDENT REGISTRATION FORM</h3>
-    <form action="#" method="post">
-        <label for="name">USERNAME:</label>
-        <input type="text" id="name" placeholder="enter username"> <br> <br>
 
-        <label for="email">email</label>
-        <input type="email" id="email" value="email" placeholder="enter email"> <br><br>
+    <h3>STUDENT REGISTRATION FORM</h3>
+
+    <form action="#" method="post">
+
+        <label for="name">USERNAME:</label>
+        <input type="text" id="name" name="username" placeholder="Enter username" required>
+        <br><br>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+        <br><br>
 
         <label for="password">PASSWORD:</label>
-        <input type="password" id="password" value="password" placeholder="create a password"> <br><br>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        <br><br>
 
-        <label for="male">male</label>
-        <input type="radio" id="male" value="female" name="gender"> <br>
+        <label>GENDER:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">MALE</label><br>
 
-        <label for="female">female</label>
-        <input type="radio" id="female" value="female" name="gender"> <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">FEMALE</label><br>
 
-        <label for="other">other</label>
-        <input type="radio" id="other" value="female" name="gender"> <br> <br>
-        
-        <label for="number">CONTECT-NO:</label>
-        <input type="number" id="number" value="number" placeholder="enter mob no"> <br><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">OTHER</label>
+        <br><br>
 
+        <label for="number">CONTACT NO:</label>
+        <input type="number" id="number" name="contact" placeholder="Enter mobile number" required>
+        <br><br>
 
-        <label for="select">SELECT COURSE:</label>
-        <select name="" id="" placeholder="chose course">
-            <option value="">BTECH</option>
-            <option value="">BCA</option>
-            <option value="">BSC</option>
-        </select> <br> <br>
-
-        <label for="country">country:</label>
-        <select name="country" id="" aria-placeholder="chose your country">
-            <option class="">india</option>
-            <option class="">china</option>
-            <option class="">america</option>
-            <option class="">nepal</option>
-            <option class="">hongkong</option>
-            <option class="">dubai</option>
-            <option class="">indonesiya</option>
+        <label for="course">SELECT COURSE:</label>
+        <select id="course" name="course">
+            <option>BTECH</option>
+            <option>BCA</option>
+            <option>BSC</option>
         </select>
+        <br><br>
 
-        <label for="feadback">FEADBACK:</label>
-        <textarea rows="5" cols="30" name="text" id="feadback" placeholder="enter your experience"></textarea><br> <br>
+        <label for="country">COUNTRY:</label>
+        <select id="country" name="country">
+            <option>INDIA</option>
+            <option>CHINA</option>
+            <option>AMERICA</option>
+            <option>NEPAL</option>
+            <option>HONGKONG</option>
+            <option>DUBAI</option>
+            <option>ENGLAND</option>
+        </select>
+        <br><br>
+
+        <label for="feedback">FEEDBACK:</label><br>
+        <textarea id="feedback" rows="5" cols="30" placeholder="Enter your experience"></textarea>
+        <br><br>
 
         <input type="submit" value="REGISTER">
-        <input type="reset" value="clear">
+        <input type="reset" value="CLEAR">
+
     </form>
+
 </body>
 </html>
